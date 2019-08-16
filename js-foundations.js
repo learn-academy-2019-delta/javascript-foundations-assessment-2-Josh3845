@@ -74,13 +74,15 @@ console.log(alphabetSoup(testString1))
 
 
 // 4b. Write a function that takes in all three variables and returns a string with all the letters in alphabetical order. Expected output: "aaaacddeeegilmnnorsy"
-let alphabetSoup = function(alpha){
-let arr = alpha.split("")
-let newArr = []
-  return arr.sort().join('').push(newArr)
-}
+alphabetSoup = (alpha1,alpha2,alpha3) => {
+    let array = alpha1 + alpha2 + alpha3
 
-console.log(alphabetSoup(testString1,testString2,testString3))
+    let arr = array.split("").sort().join("")
+
+    return arr
+}
+console.log(alphabetSoup(testString1,testString2,testString3));
+
 
 
 
